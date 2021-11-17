@@ -1,0 +1,29 @@
+<!doctype html>
+<head>
+  <title>Connect 4</title>
+  <link href="connect4.css" rel="stylesheet">
+</head>
+<body>
+
+<div id="game">
+  <table id="board"></table>
+</div>
+
+<!-- <table id="test-board">
+  <tr>
+    <td><div class="piece player1"></div></td>
+    <td><div class="piece player2"></div></td>
+  </tr>
+</table> -->
+
+<script src="connect4.js"></script>
+
+</body>
+</html>
+
+<!-- Step One: Planning
+- Grid for gameboard. 6 Rows & 7 columns that are playable. 1 row of 7 dotted squares above to add event listeners to. Use set dimensions for the height and width.
+- How to represent a played-piece in the HTML board? Increment a counter by 1 everytime one of the squares is clicked. If the counter is even, it's p1's turn and drops red circle. If the counter is odd -- or 2 -- it's p2's turn and drops a blue circle. Variable called player set to 1, then changes to 0 or 2 for player 2. Or a variable called let p1 = true, and set to false if it is not p1's turn.
+- Structure of in-memory game board: Use x and y coordinates of the grid/gameboard and check if there are 3 others in a row that are the same color.
+- Gameflow: Start as p1. currPlayer = 1? Or a counter variable starts at 0. Add event listeners to the top squares making only those squares "playable." When one of those squares is clicked, a red/blue circle appears at the bottom of that column. That circle/div has a class set to a color for p1 or p2's piece. The counter increments by 1. The counter being odd or even determines whose turn it is.
+- Function names/descriptions: makeBoard(), handleClick(), dropPiece(), checkForWinner(),  -->
